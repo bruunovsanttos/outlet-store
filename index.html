@@ -23,26 +23,44 @@
             <p>Escolha seus produtos, monte seu pedido e peça pelo WhatsApp.</p>
             <a href="#cardapio" class="btn">Ver Cardápio</a>
         </section>
-        <section id="cardapio" class="menu-selection">
+        <section id="cardapio" class="menu-section">
             <h2>Cardápio</h2>
 
             <div id="product-list" class="product-list">
                 <!--os produtos serão carregados pelo js nos codigos criados em breve-->
             </div>
-
-
-
         </section>
+        <section class="cart-section">
+            <h2>Seu carrinho</h2>
+            <div id="cart-items">
+                <p>Seu carrinho está vázio.</p>
+            </div>
 
+            <h3>Total: R$ <span id="cart-total">0,00</span></h3>
 
+            <div class="checkout-form">
+                <input type="text" id="costumer-name" placeholder="Seu nome" required><br>
+                <input type="text" id="costumer-adress" placeholder="Endereço de entrega" required><br>
 
+                <select id="payment-method" required>
+                    <option value="">Forma de pagamento</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão">Cartão</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                </select><br>
 
-
-
+                <button id="send-order" class="btn">Enviar pedido pelo WhatsApp</button>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <p>Desenvolvido por Bruno Vieira Santos</p>
+    </footer>
 
-
-
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
