@@ -18,7 +18,7 @@ function addToCart(productId){
     renderCart();
 }
 
-function rentCart() {
+function renderCart() {
     const cartItems = document.getElementById("cart-items");
     const cartTotal = document.getElementById("cart-total");
 
@@ -36,8 +36,8 @@ function rentCart() {
         const itemTotal = item.price * item.quantity;
         total += itemTotal;
 
-        const carItem = document.createElement("div");
-        cartItems.classList.add("cart-item");
+        const cartItem = document.createElement("div");
+        cartItem.classList.add("cart-item");
 
         cartItem.innerHTML = `
         <p>${item.quantity}x ${item.name} - R$ ${formatPrice(itemTotal)}</p>        
