@@ -11,14 +11,14 @@ function renderProducts(){
         const productCard = document.createElement("div");
         productCard.classList.add("product-card");
 
-        productCard.innerHTML =  '
+        productCard.innerHTML =  `
         <h3>${product.name}</h3>
         <p>${product.description}</p>
         <p class="product-price"> R$ ${formatPrice(product.price)}</p>
         <button class="btn" onClick="addToCart(${product.id})">
             Adicionar ao carrinho
         </button>
-        ';
+        `;
 
         productList.appendChild(productCard);
                
