@@ -15,6 +15,38 @@ function addToCart(productId){
         cart.push({...product, quantity: 1});
     }
 
-    renderCart;
+    renderCart();
 }
 
+function rentCart() {
+    const cartItems = document.getElementById("cart-items");
+    const cartTotal = document.getElementById("cart-total");
+
+    cartItems.innerHTML = "";
+
+    if(cart.length === 0) {
+        cartItems.innerHTML = "<p>Seu carrinho está vazio.</p>";
+        cartTotal.textContent = "0,00";
+        return;
+    }
+
+    let total = 0;
+
+    cart.forEach((item) => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+
+        const carItem = document.createElement("div");
+        cartItems.classList.add("cart-item");
+
+        cartItem.innerHTML = `
+        <p>${item.quantity}x ${item.name} - R$ ${formatPrice(itemTotal)}</p>        
+        `;
+
+        cartItems.appendChild(cartItem);
+
+    });
+
+    cartTotal.textContent = formatPrice(total);
+
+}
