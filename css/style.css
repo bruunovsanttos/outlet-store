@@ -95,3 +95,29 @@ body {
   background: #222;
   color: white;
 }
+.cart-item {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-controls button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4b006e;
+  color: white;
+  cursor: pointer;
+}
