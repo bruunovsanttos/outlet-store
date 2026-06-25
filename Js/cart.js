@@ -60,8 +60,8 @@ function removeFromCart(productId) {
 }
 
 function renderCart() {
-    const cartItems = document.getElementById("cart-items");
-    const cartTotal = document.getElementById("cart-total");
+    const cartItems = getElement("#cart-items");
+    const cartTotal = getElement("#cart-total");
 
     cartItems.innerHTML = "";
 
