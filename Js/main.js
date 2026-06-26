@@ -21,3 +21,7 @@ function renderProducts() {
 }
 
 renderProducts();
+
+const sendOrderButton = getElement("#send-order");
+
+sendOrderButton.addEventListener("click", sendOrderToWhatsApp);

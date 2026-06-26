@@ -39,8 +39,8 @@
             <h3>Total: R$ <span id="cart-total">0,00</span></h3>
 
             <div class="checkout-form">
-                <input type="text" id="custumer-name" placeholder="Seu nome" required><br>
-                <input type="text" id="custumer-adress" placeholder="Endereço de entrega" required><br>
+                <input type="text" id="customer-name" placeholder="Seu nome" required><br>
+                <input type="text" id="customer-address" placeholder="Endereço de entrega" required><br>
 
                 <select id="payment-method" required>
                     <option value="">Forma de pagamento</option>
@@ -48,6 +48,7 @@
                     <option value="Cartão">Cartão</option>
                     <option value="Dinheiro">Dinheiro</option>
                 </select><br>
+                <p id="checkout-message" class="checkout-message"></p>
 
                 <button id="send-order" class="btn">Enviar pedido pelo WhatsApp</button>
             </div>
