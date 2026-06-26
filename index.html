@@ -12,16 +12,21 @@
 <body>
 
     <header class="header">
-        <h1>Meu pedido Web</h1>
-        <p>Monte seu pedido e envie pelo WhatsApp</p>
+    <div>
+        <h1 id="company-name">Meu Pedido Web</h1>
+        <p id="company-slogan">Monte seu pedido e envie pelo WhatsApp</p>
+    </div>
     </header>
     
 
     <main>
-        <section class="title">
-            <h2>Cardapio online, simples e prático para seu negócio</h2>
-            <p>Escolha seus produtos, monte seu pedido e peça pelo WhatsApp.</p>
-            <a href="#cardapio" class="btn">Ver Cardápio</a>
+        <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Cardápio online</span>
+            <h2>Peça de forma rápida, simples e segura</h2>
+            <p>Escolha seus produtos, acompanhe o total do carrinho e finalize seu pedido pelo WhatsApp.</p>
+            <a href="#cardapio" class="btn">Ver cardápio</a>
+        </div>
         </section>
         <section id="cardapio" class="menu-section">
             <h2>Cardápio</h2>
@@ -59,6 +64,7 @@
         <p>Desenvolvido por Bruno Vieira Santos</p>
     </footer>
 
+    <script src="js/config.js"></script>
     <script src="js/data.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/cart.js"></script>
