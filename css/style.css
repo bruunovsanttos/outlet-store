@@ -248,6 +248,14 @@ a {
     max-width: 300px;
     height: 220px;
   }
+  .contact-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-content,
+.footer-bottom {
+  flex-direction: column;
+}
 }
 
 .categories,
@@ -532,6 +540,16 @@ a {
   .quantity-controls {
     flex-wrap: wrap;
   }
+  .contact-grid {
+  grid-template-columns: 1fr;
+}
+
+.floating-whatsapp {
+  width: 52px;
+  height: 52px;
+  right: 18px;
+  bottom: 18px;
+}
 }
 .product-card {
   overflow: hidden;
@@ -591,4 +609,129 @@ a {
 .product-btn {
   padding: 10px 14px;
   font-size: 14px;
+}
+.contact-section {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 50px 8%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.contact-card {
+  background: var(--white-color);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  color: var(--gray-color);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer {
+  background: var(--dark-color);
+  color: var(--white-color);
+  padding: 40px 8% 20px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-content h3 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.footer-content p {
+  color: #ccc;
+  max-width: 420px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ddd;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 58px;
+  height: 58px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  z-index: 99;
+  transition: 0.2s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.08);
 }
