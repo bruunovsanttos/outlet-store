@@ -54,11 +54,31 @@ const products = [
     {
         id:6,
         name: "Açai 700ml",
-        description: "Grandes Fomes, Grandes Responsabilidades.",
+        description: "Açai tradicional com até 3 acompanhamentos.",
         price: 34.00,
         category: "Açai",
         image: "assets/img/products/açai700.jpg",
         badge: "Grande mesmo",
         rating: 4.6
+    },
+    {
+        id:7,
+        name: "Combo Família",
+        description: "3 açais de 300 ml, uma coca 2 litros e uma água 500 ml.",
+        price: 59.90,
+        category: "Açai",
+        image: "assets/img/products/açai300.jpg",
+        badge: "Combo Família",
+        rating: 4.9
+    },
+    {
+        id:8,
+        name: "Água",
+        description: "Água 500 ml",
+        price: 5.00,
+        category: "Bebidas",
+        image: "assets/img/products/agua.jpg",
+        badge: "Bebida",
+        rating: 4.9
     }
 ];
