@@ -116,32 +116,58 @@
     </section>
 
     <section id="carrinho" class="cart-section">
-      <div class="section-title">
-        <span>Seu pedido</span>
-        <h2>Carrinho</h2>
-      </div>
+        <div class="cart-header">
+            <div>
+            <span class="cart-label">🛒 Seu pedido</span>
+            <h2>Resumo do Pedido</h2>
+            <p>Confira os itens, informe seus dados e finalize pelo WhatsApp.</p>
+            </div>
+        </div>
 
-      <div id="cart-items">
-        <p>Seu carrinho está vazio.</p>
-      </div>
+        <div class="cart-layout">
+            <div class="cart-summary-card">
+                <div class="cart-summary-top">
+                    <h3>Itens selecionados</h3>
+                    <span>Pedido online</span>
+                </div>
 
-      <h3>Total: R$ <span id="cart-total">0,00</span></h3>
+                <div id="cart-items" class="cart-items-list">
+                    <p>Seu carrinho está vazio.</p>
+                </div>
 
-      <div class="checkout-form">
-        <input type="text" id="customer-name" placeholder="Seu nome" required>
-        <input type="text" id="customer-address" placeholder="Endereço de entrega" required>
+                <div class="cart-total-box">
+                    <span>Total do pedido</span>
+                    <strong>R$ <span id="cart-total">0,00</span></strong>
+                </div>
+            </div>
 
-        <select id="payment-method" required>
-          <option value="">Forma de pagamento</option>
-          <option value="Pix">Pix</option>
-          <option value="Cartão">Cartão</option>
-          <option value="Dinheiro">Dinheiro</option>
-        </select>
+        <div class="checkout-card">
+            <h3>Dados para entrega</h3>
+            <p>Essas informações serão enviadas junto com o pedido.</p>
 
-        <p id="checkout-message" class="checkout-message"></p>
+                <div class="checkout-form">
+                    <label for="customer-name">Nome</label>
+                    <input type="text" id="customer-name" placeholder="Digite seu nome" required>
 
-        <button id="send-order" class="btn">Enviar pedido pelo WhatsApp</button>
-      </div>
+                    <label for="customer-address">Endereço</label>
+                    <input type="text" id="customer-address" placeholder="Rua, número, bairro" required>
+
+                    <label for="payment-method">Pagamento</label>
+                    <select id="payment-method" required>
+                        <option value="">Escolha a forma de pagamento</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Cartão">Cartão</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                    </select>
+
+                    <p id="checkout-message" class="checkout-message"></p>
+
+                    <button id="send-order" class="btn checkout-button">
+                        Finalizar pedido pelo WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="testimonials">
