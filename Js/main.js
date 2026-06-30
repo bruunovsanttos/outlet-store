@@ -25,3 +25,13 @@ renderProducts();
 const sendOrderButton = getElement("#send-order");
 
 sendOrderButton.addEventListener("click", sendOrderToWhatsApp);
+
+function applyCompanyConfig() {
+    getElement("#company-name").textContent = company.name;
+    getElement("#company-slogan").textContent = company.slogan;
+
+    document.documentElement.style.setProperty("--primary-color", company.primaryColor);
+    document.documentElement.style.setProperty("--secondary-color", company.secondaryColor);
+}
+
+applyCompanyConfig();

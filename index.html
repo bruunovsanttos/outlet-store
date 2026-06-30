@@ -1,74 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Outlet Store</title>
+  <title>Delivery Landing Template</title>
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="header">
-    <div>
-        <h1 id="company-name">Meu Pedido Web</h1>
-        <p id="company-slogan">Monte seu pedido e envie pelo WhatsApp</p>
+  <header class="header">
+    <div class="logo">
+      <h1 id="company-name">Açai da Vila</h1>
+      <p id="company-slogan">O melhor açai da cidade</p>
     </div>
-    </header>
-    
 
-    <main>
-        <section class="hero">
-        <div class="hero-content">
-            <span class="badge">Cardápio online</span>
-            <h2>Peça de forma rápida, simples e segura</h2>
-            <p>Escolha seus produtos, acompanhe o total do carrinho e finalize seu pedido pelo WhatsApp.</p>
-            <a href="#cardapio" class="btn">Ver cardápio</a>
+    <div class="header-actions">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#contato">Contato</a>
+      <a href="#carrinho" class="cart-link">🛒 Pedido</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <span class="rating">★★★★★ 4.9</span>
+
+        <h2>O Verdadeiro Açai da Vila pertinho de você.</h2>
+
+        <p>
+          Escolha seus toppings favoritos, monte seu pedido e finalize direto pelo WhatsApp.
+        </p>
+
+        <div class="hero-info">
+          <span>🚚 Entrega rápida</span>
+          <span>🔥 Açai Original</span>
+          <span>💳 Pix, cartão ou dinheiro</span>
         </div>
-        </section>
-        <section id="cardapio" class="menu-section">
-            <h2>Cardápio</h2>
 
-            <div id="product-list" class="product-list">
-                <!--os produtos serão carregados pelo js nos codigos criados em breve-->
-            </div>
-        </section>
-        <section class="cart-section">
-            <h2>Seu carrinho</h2>
-            <div id="cart-items">
-                <p>Seu carrinho está vázio.</p>
-            </div>
+        <a href="#cardapio" class="btn">Fazer pedido</a>
+      </div>
 
-            <h3>Total: R$ <span id="cart-total">0,00</span></h3>
+      <div class="hero-image">
+        <img src="assets/img/açaidavila.jpg" alt="Açai de tigela">
+      </div>
+    </section>
 
-            <div class="checkout-form">
-                <input type="text" id="customer-name" placeholder="Seu nome" required><br>
-                <input type="text" id="customer-address" placeholder="Endereço de entrega" required><br>
+    <section class="promo-banner">
+      <div>
+        <span>🔥 Promoção da semana</span>
+        <h2>Combo Família com desconto especial</h2>
+        <p>Peça agora e aproveite uma oferta exclusiva pelo WhatsApp.</p>
+      </div>
 
-                <select id="payment-method" required>
-                    <option value="">Forma de pagamento</option>
-                    <option value="Pix">Pix</option>
-                    <option value="Cartão">Cartão</option>
-                    <option value="Dinheiro">Dinheiro</option>
-                </select><br>
-                <p id="checkout-message" class="checkout-message"></p>
+      <a href="#cardapio" class="btn btn-light">Ver ofertas</a>
+    </section>
 
-                <button id="send-order" class="btn">Enviar pedido pelo WhatsApp</button>
-            </div>
-        </section>
-    </main>
+    <section class="categories">
+      <h2>Categorias</h2>
 
-    <footer class="footer">
-        <p>Desenvolvido por Bruno Vieira Santos</p>
-    </footer>
+      <div class="category-list">
+        <div class="category-card">🍨 <span>Açais</span></div>
+        <div class="category-card">🥤 <span>Bebidas</span></div>
+        <div class="category-card">🍟 <span>Porções</span></div>
+        <div class="category-card">🍰 <span>Sobremesas</span></div>
+      </div>
+    </section>
 
-    <script src="js/config.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/whatsapp.js"></script>
-    <script src="js/main.js"></script>
+    <section id="cardapio" class="menu-section">
+      <div class="section-title">
+        <span>Nosso cardápio</span>
+        <h2>Escolha seus produtos</h2>
+      </div>
+
+      <div id="product-list" class="product-list">
+        <!-- Produtos carregados pelo JavaScript -->
+      </div>
+    </section>
+
+    <section id="carrinho" class="cart-section">
+      <div class="section-title">
+        <span>Seu pedido</span>
+        <h2>Carrinho</h2>
+      </div>
+
+      <div id="cart-items">
+        <p>Seu carrinho está vazio.</p>
+      </div>
+
+      <h3>Total: R$ <span id="cart-total">0,00</span></h3>
+
+      <div class="checkout-form">
+        <input type="text" id="customer-name" placeholder="Seu nome" required>
+        <input type="text" id="customer-address" placeholder="Endereço de entrega" required>
+
+        <select id="payment-method" required>
+          <option value="">Forma de pagamento</option>
+          <option value="Pix">Pix</option>
+          <option value="Cartão">Cartão</option>
+          <option value="Dinheiro">Dinheiro</option>
+        </select>
+
+        <p id="checkout-message" class="checkout-message"></p>
+
+        <button id="send-order" class="btn">Enviar pedido pelo WhatsApp</button>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="section-title">
+        <span>Avaliações</span>
+        <h2>O que os clientes dizem</h2>
+      </div>
+
+      <div class="testimonial-list">
+        <div class="testimonial-card">
+          <p>★★★★★</p>
+          <strong>Entrega rápida e pizza excelente.</strong>
+          <span>— Mariana S.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <p>★★★★★</p>
+          <strong>Pedido fácil e atendimento ótimo.</strong>
+          <span>— Rafael M.</span>
+        </div>
+
+        <div class="testimonial-card">
+          <p>★★★★★</p>
+          <strong>Virou minha pizzaria favorita.</strong>
+          <span>— João P.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+      <h2>Informações</h2>
+
+      <div class="contact-grid">
+        <div>📍 Rua Exemplo, 123</div>
+        <div>🕒 Aberto das 18h às 23h</div>
+        <div>📞 WhatsApp: (11) 99999-9999</div>
+        <div>📸 Instagram: @açaidavilla</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Desenvolvido por Bruno Vieira Santos</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const STORE_PHONE = "5511949651772";
+const STORE_PHONE = company.whatsapp;
 
 function showCheckoutMessage(message) {
     const checkoutMessage = getElement("#checkout-message");
