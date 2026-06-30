@@ -6,8 +6,8 @@ const products = [
         price: 15.00,
         category: "Açai",
         image: "assets/img/products/açai300.jpg",
-        badge: "Mais vendido",
-        ratting: 4.9
+        badge: "Opção Economica",
+        rating: 4.0
     },
 
     {
@@ -18,7 +18,7 @@ const products = [
         category: "Açai",
         image: "assets/img/products/açai500.jpg",
         badge: "Mais vendido",
-        ratting: 4.9
+        rating: 4.9
     },
     
     {
@@ -28,8 +28,8 @@ const products = [
         price: 40.00,
         category: "Combo",
         image: "assets/img/products/açaicasal.jpg",
-        badge: "Mais vendido",
-        ratting: 4.9
+        badge: "Combo para sentar na calçada",
+        rating: 4.5
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ const products = [
     {
         id: 5,
         name: "Coca-Cola 250ml",
-        description: "Refrigerante gelado para acompanhar seu pedido.",
+        description: "Refrigerante pequeno gelado para acompanhar seu pedido.",
         price: 8.50,
         category: "Bebidas",
         image: "assets/img/products/coca275.jpg",
@@ -54,11 +54,11 @@ const products = [
     {
         id:6,
         name: "Açai 700ml",
-        description: "Açai tradicional com até 3 acompanhamentos.",
-        price: 25.00,
+        description: "Grandes Fomes, Grandes Responsabilidades.",
+        price: 34.00,
         category: "Açai",
         image: "assets/img/products/açai700.jpg",
-        badge: "Mais vendido",
-        ratting: 4.9
+        badge: "Grande mesmo",
+        rating: 4.6
     }
 ];
