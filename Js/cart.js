@@ -26,9 +26,11 @@ function addToCart(productId) {
 function increaseQuantity(productId) {
     const productInCart = cart.find((item) => item.id === productId);
 
-    if (productInCart) {
-        productInCart.quantity += 1;
+    if (!productInCart) {
+        return;
     }
+
+    productInCart.quantity += 1;
 
     saveCart();
     renderCart();
@@ -59,6 +61,35 @@ function removeFromCart(productId) {
     renderCart();
 }
 
+function createCartItem(item) {
+    const itemTotal = item.price * item.quantity;
+
+    const cartItem = document.createElement("div");
+    cartItem.classList.add("cart-item");
+
+    cartItem.innerHTML = `
+        <div>
+            <strong>${item.name}</strong>
+            <p>Subtotal: R$ ${formatPrice(itemTotal)}</p>
+        </div>
+
+        <div class="quantity-controls">
+            <button onclick="decreaseQuantity(${item.id})">-</button>
+            <span>${item.quantity}</span>
+            <button onclick="increaseQuantity(${item.id})">+</button>
+            <button onclick="removeFromCart(${item.id})">Remover</button>
+        </div>
+    `;
+
+    return cartItem;
+}
+
+function calculateCartTotal() {
+    return cart.reduce((total, item) => {
+        return total + item.price * item.quantity;
+    }, 0);
+}
+
 function renderCart() {
     const cartItems = getElement("#cart-items");
     const cartTotal = getElement("#cart-total");
@@ -71,32 +102,12 @@ function renderCart() {
         return;
     }
 
-    let total = 0;
-
     cart.forEach((item) => {
-        const itemTotal = item.price * item.quantity;
-        total += itemTotal;
-
-        const cartItem = document.createElement("div");
-        cartItem.classList.add("cart-item");
-
-        cartItem.innerHTML = `
-            <div>
-                <strong>${item.name}</strong>
-                <p>Subtotal: R$ ${formatPrice(itemTotal)}</p>
-            </div>
-
-            <div class="quantity-controls">
-                <button onclick="decreaseQuantity(${item.id})">-</button>
-                <span>${item.quantity}</span>
-                <button onclick="increaseQuantity(${item.id})">+</button>
-                <button onclick="removeFromCart(${item.id})">Remover</button>
-            </div>
-        `;
-
+        const cartItem = createCartItem(item);
         cartItems.appendChild(cartItem);
     });
 
+    const total = calculateCartTotal();
     cartTotal.textContent = formatPrice(total);
 }
 
