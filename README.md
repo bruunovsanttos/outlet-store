@@ -9,7 +9,7 @@ O projeto foi desenvolvido pensando em pequenos negócios que desejam oferecer u
 ## 🚀 Demonstração
 
 🔗 **Projeto Online**
-> Em breve via GitHub Pages
+> [Clique aqui e acesse o projeto](https://bruunovsanttos.github.io/outlet-store/)
 
 🔗 **Repositório**
 > [https://github.com/bruunovsanttos/outlet-store](https://github.com/bruunovsanttos/outlet-store)
