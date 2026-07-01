@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -94,14 +94,33 @@
     </section>
 
     <section class="categories">
-      <h2>Categorias</h2>
+        <h2>Categorias</h2>
 
-      <div class="category-list">
-        <div class="category-card">🍨 <span>Açais</span></div>
-        <div class="category-card">🥤 <span>Bebidas</span></div>
-        <div class="category-card">🍟 <span>Porções</span></div>
-        <div class="category-card">🍰 <span>Sobremesas</span></div>
-      </div>
+    <div class="category-list">
+        <div class="category-card active">
+            <i class="fa-solid fa-bowl-food"></i>
+            <span>Açaís</span>
+            <small>Mais vendidos</small>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-glass-water"></i>
+            <span>Bebidas</span>
+            <small>Geladas</small>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-cookie-bite"></i>
+            <span>Doces</span>
+            <small>Sobremesas</small>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-fire"></i>
+            <span>Combos</span>
+            <small>Ofertas</small>
+        </div>
+    </div>
     </section>
 
     <section id="cardapio" class="menu-section">
@@ -205,25 +224,25 @@
 
         <div class="contact-grid">
             <div class="contact-card">
-                <span class="contact-icon">📍</span>
+                <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
                 <h3>Endereço</h3>
                 <p>Rua Exemplo, 123<br>Centro - Sua Cidade/SP</p>
             </div>
 
         <div class="contact-card">
-            <span class="contact-icon">🕒</span>
+            <span class="contact-icon"><i class="fa-solid fa-clock"></i></span>
             <h3>Horário</h3>
             <p>Todos os dias<br>18h às 23h30</p>
         </div>
 
         <div class="contact-card">
-            <span class="contact-icon">📞</span>
+            <span class="contact-icon"><i class="fa-brands fa-whatsapp"></i></span>
             <h3>WhatsApp</h3>
             <p>(11) 99999-9999<br>Pedido rápido online</p>
         </div>
 
         <div class="contact-card">
-            <span class="contact-icon">📸</span>
+            <span class="contact-icon"><i class="fa-brands fa-instagram"></i></span>
             <h3>Instagram</h3>
             <p>@pizzaprime<br>Acompanhe novidades</p>
         </div>
@@ -259,7 +278,7 @@
   <script src="js/whatsapp.js"></script>
   <script src="js/main.js"></script>
   <a href="https://wa.me/5511949651772" class="floating-whatsapp" target="_blank" aria-label="Chamar no WhatsApp">
-  💬
+  <i class="fa-brands fa-whatsapp"></i>
 </a>
 </body>
 </html>
