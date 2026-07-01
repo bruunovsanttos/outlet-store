@@ -1,34 +1,32 @@
 const products = [
     {
-        id:1,
-        name: "Açai 300ml",
-        description: "Açai tradicional com até 2 acompanhamentos.",
+        id: 1,
+        name: "Açaí 300ml",
+        description: "Açaí tradicional com até 2 acompanhamentos.",
         price: 15.00,
-        category: "Açai",
-        image: "assets/img/products/açai300.jpg",
-        badge: "Opção Economica",
+        category: "Açaís",
+        image: "assets/img/products/acai300.jpg",
+        badge: "Opção econômica",
         rating: 4.0
     },
-
     {
-        id:2,
-        name: "Açai 500ml",
-        description: "Açai tradicional com até 3 acompanhamentos.",
+        id: 2,
+        name: "Açaí 500ml",
+        description: "Açaí tradicional com até 3 acompanhamentos.",
         price: 25.00,
-        category: "Açai",
-        image: "assets/img/products/açai500.jpg",
+        category: "Açaís",
+        image: "assets/img/products/acai500.jpg",
         badge: "Mais vendido",
         rating: 4.9
     },
-    
     {
-        id:3,
+        id: 3,
         name: "Combo Casal",
-        description: "2 açais de 500 ml com acompanhamentos.",
+        description: "2 açaís de 500ml com acompanhamentos.",
         price: 40.00,
-        category: "Combo",
-        image: "assets/img/products/açaicasal.jpg",
-        badge: "Combo para sentar na calçada",
+        category: "Combos",
+        image: "assets/img/products/acaicasal.jpg",
+        badge: "Combo especial",
         rating: 4.5
     },
     {
@@ -52,29 +50,29 @@ const products = [
         rating: 4.9
     },
     {
-        id:6,
-        name: "Açai 700ml",
-        description: "Açai tradicional com até 3 acompanhamentos.",
+        id: 6,
+        name: "Açaí 700ml",
+        description: "Açaí tradicional com até 3 acompanhamentos.",
         price: 34.00,
-        category: "Açai",
-        image: "assets/img/products/açai700.jpg",
+        category: "Açaís",
+        image: "assets/img/products/acai700.jpg",
         badge: "Grande mesmo",
         rating: 4.6
     },
     {
-        id:7,
+        id: 7,
         name: "Combo Família",
-        description: "3 açais de 300 ml, uma coca 2 litros e uma água 500 ml.",
+        description: "3 açaís de 300ml, uma Coca-Cola 2L e uma água 500ml.",
         price: 59.90,
-        category: "Açai",
-        image: "assets/img/products/açai300.jpg",
-        badge: "Combo Família",
+        category: "Combos",
+        image: "assets/img/products/acai300.jpg",
+        badge: "Combo família",
         rating: 4.9
     },
     {
-        id:8,
+        id: 8,
         name: "Água",
-        description: "Água 500 ml",
+        description: "Água 500ml.",
         price: 5.00,
         category: "Bebidas",
         image: "assets/img/products/agua.jpg",
