@@ -15,7 +15,13 @@ O projeto foi desenvolvido pensando em pequenos negócios que desejam oferecer u
 > [https://github.com/bruunovsanttos/outlet-store](https://github.com/bruunovsanttos/outlet-store)
 
 ---
+## Tecnologias Utilizadas
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+---
 # 📸 Preview
 
 > Adicione aqui um print da página principal.
@@ -213,7 +219,7 @@ GitHub
 
 LinkedIn
 
-[Acesse meu linkedIn](https://linkedin.com/in/bruunovsanttos)
+[Acesse meu linkedIn](https://www.linkedin.com/in/brunovieirasantos)
 
 ---
 
@@ -227,4 +233,4 @@ Caso tenha sugestões ou encontre melhorias, fique à vontade para abrir uma Iss
 
 # 📄 Licença
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto está licenciado sob a licença MIT. ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
