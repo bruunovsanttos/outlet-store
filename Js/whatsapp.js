@@ -1,14 +1,20 @@
 const STORE_PHONE = company.whatsapp;
 
+function getCheckoutData() {
+    return {
+        customerName: getElement("#customer-name").value.trim(),
+        customerAddress: getElement("#customer-address").value.trim(),
+        paymentMethod: getElement("#payment-method").value
+    };
+}
+
 function showCheckoutMessage(message) {
     const checkoutMessage = getElement("#checkout-message");
     checkoutMessage.textContent = message;
 }
 
 function validateOrder() {
-    const customerName = getElement("#customer-name").value.trim();
-    const customerAddress = getElement("#customer-address").value.trim();
-    const paymentMethod = getElement("#payment-method").value;
+    const { customerName, customerAddress, paymentMethod } = getCheckoutData();
 
     if (cart.length === 0) {
         showCheckoutMessage("Adicione pelo menos um produto ao carrinho.");
@@ -34,19 +40,19 @@ function validateOrder() {
     return true;
 }
 
-function buildOrderMessage() {
-    const customerName = getElement("#customer-name").value.trim();
-    const customerAddress = getElement("#customer-address").value.trim();
-    const paymentMethod = getElement("#payment-method").value;
-
-    let total = 0;
-
-    const itemsMessage = cart.map((item) => {
+function buildItemsMessage() {
+    return cart.map((item) => {
         const itemTotal = item.price * item.quantity;
-        total += itemTotal;
 
         return `${item.quantity}x ${item.name} - R$ ${formatPrice(itemTotal)}`;
     }).join("\n");
+}
+
+function buildOrderMessage() {
+    const { customerName, customerAddress, paymentMethod } = getCheckoutData();
+
+    const itemsMessage = buildItemsMessage();
+    const total = calculateCartTotal();
 
     return `
 Olá! Gostaria de fazer um pedido.
