@@ -15,13 +15,7 @@ O projeto foi desenvolvido pensando em pequenos negócios que desejam oferecer u
 > [https://github.com/bruunovsanttos/outlet-store](https://github.com/bruunovsanttos/outlet-store)
 
 ---
-## Tecnologias Utilizadas
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
----
 # 📸 Preview
 
 > Adicione aqui um print da página principal.
@@ -68,9 +62,9 @@ assets/img/readme/home.png
 
 # 🛠 Tecnologias utilizadas
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+- HTML5   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- CSS3  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- JavaScript (ES6+) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 - LocalStorage
 - Font Awesome
 - Google Fonts
